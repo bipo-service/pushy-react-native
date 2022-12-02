@@ -46,6 +46,10 @@ NSDictionary *coldStartNotification;
     }
 }
 
++ (void)didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)token {
+    [pushy application:[UIApplication sharedApplication] didRegisterForRemoteNotificationsWithDeviceToken:token];
+}
+
 RCT_EXPORT_METHOD(listen)
 {
     // Run on main thread
