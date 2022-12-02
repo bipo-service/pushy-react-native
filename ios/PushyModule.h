@@ -8,5 +8,6 @@
 @interface PushyModule : RCTEventEmitter <RCTBridgeModule>
 + (PushyObj *_Nonnull)getSharedPushyInstance;
 + (void)didFinishLaunchingWithOptions:(NSDictionary *_Nonnull)launchOptions;
++ (void)didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)token;
 @end
 
